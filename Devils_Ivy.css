@@ -2,16 +2,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
+  background-color: black
   ;
 }
 
 /* Main Styles*/
 /*********** header styles***********/
 
-body {
-  background-color: black;
-}
 
 li,
 a {
@@ -37,6 +34,7 @@ header {
 }
 
 .navbar {
+  padding: 30px 60px ;
   display: flex;
   background-color: black;
   color: white;

@@ -12,7 +12,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
   background-color: black;
 
 
@@ -38,6 +37,7 @@ a {
 
 
 .navbar {
+  padding: 30px 60px ;
   display: flex;
   background-color: black;
   color: white;
