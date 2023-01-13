@@ -2,15 +2,17 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  
+
   ;
 }
+
 /* Main Styles*/
 /*********** header styles***********/
 
-body{
+body {
   background-color: black;
 }
+
 li,
 a {
   font-family: 'Montserrat';
@@ -79,19 +81,19 @@ header {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  margin-left: 150px;
   gap: 20%;
+
 
 }
 
 img {
-
   max-height: 100%;
   max-width: 100%;
 }
 
 .text {
   font-size: 30px;
-  margin-left: 200px;
   color: white;
   font-family: 'Black Han Sans', sans-serif;
 }
@@ -103,68 +105,66 @@ h1 {
 
 
 /*** Footer Styles ***/
-footer{
+footer {
   position: absolute;
   bottom: 0;
-  left:0;
-  right:0;
-  height:25px;
-  width:100vw;
-  padding-top:40px;
-  color:white;
+  left: 0;
+  right: 0;
+  height: 25px;
+  width: 100vw;
+  padding-top: 40px;
+  color: white;
 }
-.footer-content{
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  flex-direction: column;
-  text-align:center;
-}
-.footer-content h3{
-  font-size:15px;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height:3rem; 
-}
-.footer-content p{
-  max-width:500px;
-  margin:10px auto;
-  line-height:28px;
-  font-size:14px;
-}
-.socials{
-  list-style:none;
+
+.footer-content {
   display: flex;
   align-items: center;
-  justify-content:center;
-  
-}
-.socials li{
-margin:0 10px;
-}
-.socials a{
-  text-decoration: none;
-  color:white;
-}
-.socials a i{
-  font-size:1.1rem;
-}
-.footer-bottom{
-  background-color: black;
-  width:100vw;
-  padding: 20px 0;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
 
+.footer-content h3 {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
 
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
 
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
 
+.socials li {
+  margin: 0 10px;
+}
 
+.socials a {
+  text-decoration: none;
+  color: white;
+}
 
+.socials a i {
+  font-size: 1.1rem;
+}
 
-
-
+.footer-bottom {
+  background-color: black;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
 
 
 
