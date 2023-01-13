@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+  ;
+}
+/* Main Styles*/
+/*********** header styles***********/
+
+body{
+  background-color: black;
+}
+li,
+a {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 500;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: black;
+}
+
+.logo {
+  cursor: pointer;
+  height: auto;
+  max-width: 10%;
+}
+
+.navbar {
+  display: flex;
+  background-color: black;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: lightskyblue;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+
+
+
+/*** Main Content styles ***/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 20%;
+
+}
+
+img {
+
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.text {
+  font-size: 30px;
+  margin-left: 200px;
+  color: white;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  padding-bottom: 40px;
+}
+
+
+/*** Footer Styles ***/
+footer{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  height:25px;
+  width:100vw;
+  padding-top:40px;
+  color:white;
+}
+.footer-content{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  text-align:center;
+}
+.footer-content h3{
+  font-size:15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height:3rem; 
+}
+.footer-content p{
+  max-width:500px;
+  margin:10px auto;
+  line-height:28px;
+  font-size:14px;
+}
+.socials{
+  list-style:none;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  
+}
+.socials li{
+margin:0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color:white;
+}
+.socials a i{
+  font-size:1.1rem;
+}
+.footer-bottom{
+  background-color: black;
+  width:100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Styles*/
+
+@media (max-width:480px) {
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .logo {
+    width: 100%;
+  }
+
+  .nav_links {
+    display: none;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .nav_links li {
+    display: block;
+    border-top: 1px solid white;
+  }
+
+  .logo {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  .active {
+    display: block;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #beer_desc {
+    all: inherit;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Black Han Sans', sans-serif;
+  }
+
+  .beer_title {
+    font-size: 50px;
+    padding-bottom: 30px;
+    font-family: 'Black Han Sans', sans-serif;
+  }
+
+  img {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
