@@ -7,27 +7,22 @@
 
 /*********** header styles***********/
 
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
   background-color: black;
-
-
 }
 
 li,
 a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: 500;
   color: whitesmoke;
   text-decoration: none;
-
 }
-
-
 
 .logo {
   cursor: pointer;
@@ -35,9 +30,8 @@ a {
   max-width: 10%;
 }
 
-
 .navbar {
-  padding: 30px 60px ;
+  padding: 30px 60px;
   display: flex;
   background-color: black;
   color: white;
@@ -73,7 +67,6 @@ a {
   margin-bottom: 4px;
 }
 
-
 .container {
   display: flex;
   align-items: center;
@@ -83,11 +76,7 @@ a {
   margin-left: 100px;
 }
 
-
-
-
 img {
-
   max-height: 100%;
   max-width: 100%;
 }
@@ -96,7 +85,7 @@ img {
   font-size: 30px;
 
   color: white;
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Black Han Sans", sans-serif;
 }
 
 h1 {
@@ -143,7 +132,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .socials li {
@@ -164,4 +152,70 @@ footer {
   width: 100vw;
   padding: 20px 0;
   text-align: center;
+}
+
+/**** Mobile Styles ****/
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    height: auto;
+    max-width: 100px;
+    margin: 0;
+  }
+  .nav_links {
+    display: none;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .nav_links li {
+    display: block;
+    border-top: 1px solid white;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  .active {
+    display: block;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+
+  #beer_desc {
+    all: inherit;
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px;
+    color: white;
+    font-size: 25px;
+    font-family: "Black Han Sans", sans-serif;
+  }
+
+  .beer_title {
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-family: "Black Han Sans", sans-serif;
+  }
+
+  #BC {
+    margin-top: 40px;
+  }
 }

@@ -23,7 +23,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   background-color: black;
 }
 
@@ -172,12 +172,16 @@ footer {
 
   .navbar {
     flex-direction: column;
-  }
-
-  .navbar .logo {
+    padding:20px;
     width: 100%;
+    margin-bottom: 40px;
   }
 
+  .logo{
+    height:auto;
+    max-width:100px;
+    margin: 0;
+  }
   .nav_links {
     display: none;
     list-style: none;
@@ -189,11 +193,6 @@ footer {
   .nav_links li {
     display: block;
     border-top: 1px solid white;
-  }
-
-  .logo {
-    margin-top: 10px;
-    margin-left: 10px;
   }
 
   .menu {
@@ -211,6 +210,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin:0px;
   }
 
   #beer_desc {
@@ -223,16 +223,12 @@ footer {
   }
 
   .beer_title {
-    font-size: 50px;
+    font-size: 40px;
     padding-bottom: 30px;
     font-family: 'Black Han Sans', sans-serif;
   }
 
-  img {
+  #BC {
     margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    max-height: 100%;
   }
 }
