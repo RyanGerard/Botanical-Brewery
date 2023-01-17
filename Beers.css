@@ -117,6 +117,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-top: 300px;
 }
 .footer-content h3 {
   font-size: 15px;
@@ -215,5 +216,8 @@ footer {
   
   footer {
     position: relative;
+  }
+  .footer-content{
+    margin:0;
   }
 }
