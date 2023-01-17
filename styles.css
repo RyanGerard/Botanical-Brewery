@@ -61,3 +61,8 @@ img{
   height: 220px;
   width:220px;
 }
+#btn{
+  color: white;
+  height:auto;
+  width:100px;
+}
