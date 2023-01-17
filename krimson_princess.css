@@ -27,7 +27,7 @@ a {
 .logo {
   cursor: pointer;
   height: auto;
-  max-width: 10%;
+  width:100px;
 }
 
 .navbar {

@@ -34,14 +34,7 @@ body{
   
 }
 
-.Welcome{
-  overflow: hidden;
-  margin-top: 100px;
-  text-align: center;
-  color: white;
-  font-family: 'Black Han Sans', sans-serif;
 
-}
 
 .Disclaimer {
   color: white;
@@ -54,7 +47,7 @@ body{
 }
 
 .logo img{
-  border-radius: 25%;
+  border-radius: 10%;
   
 }
 img{
