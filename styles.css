@@ -14,13 +14,12 @@ body{
 
 
 .ageVerification {
-
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
  width: 100%;
- height: 100vh;
+ height: 300px;
  
  
 }
@@ -37,7 +36,7 @@ body{
 
 .Welcome{
   overflow: hidden;
-  margin-top: 200px;
+  margin-top: 100px;
   text-align: center;
   color: white;
   font-family: 'Black Han Sans', sans-serif;
@@ -48,4 +47,17 @@ body{
   color: white;
   padding-top: 20px;
   width: 20%;
+}
+.logo{
+  margin-top: 80px;
+  text-align: center;
+}
+
+.logo img{
+  border-radius: 25%;
+  
+}
+img{
+  height: 220px;
+  width:220px;
 }
