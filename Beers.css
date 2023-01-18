@@ -2,9 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: black;
+ 
 }
-
 /*********** header styles***********/
 
 li,
@@ -70,7 +69,13 @@ header {
 }
 
 /*********** main content styles ***********/
+body{
+  background-image: url(../img/memphis-mini-dark.webp);
+}
+
 .beer_list {
+  
+  
   margin: 100px;
 }
 
@@ -90,6 +95,7 @@ header {
 
 .main-content {
   display: flex;
+  background-image: url(../img/memphis-mini-dark.webp);
 }
 
 img {
@@ -109,7 +115,7 @@ footer {
   height: 25px;
   width: 100vw;
   padding-top: 40px;
-  color: white;
+  color:white;
 }
 .footer-content {
   display: flex;
@@ -118,6 +124,7 @@ footer {
   flex-direction: column;
   text-align: center;
   margin-top: 300px;
+  background-color: black ;
 }
 .footer-content h3 {
   font-size: 15px;

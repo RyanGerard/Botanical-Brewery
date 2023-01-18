@@ -2,10 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-image: url(../img/memphis-mini-dark.webp);
 }
 
 body {
+  
   overflow: hidden;
 }
 
