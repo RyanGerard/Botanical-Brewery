@@ -7,3 +7,9 @@ const toggleButton = document.getElementById('toggle-Button');
     navList.classList.toggle('active');
   }) 
 
+  const enter = document.getElementById('enter');
+  enter.addEventListener('click', () => {
+    window.location.href = "Beers.html";
+  })
+
+  

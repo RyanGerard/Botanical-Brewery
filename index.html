@@ -14,21 +14,28 @@
   </head>
 
   <body>
-    
-    <div class="logo">
-      <a href="beers.html">
-      <img src="img/logo4.png" />
-      </a>
+    <div class="disclaimer">
+      <h1 class="age">
+        <p>Are You Over 21?</p>
+      </h1>
+      <p class="legal">
+        You must be of legal drinking age to enter this site. Your information
+        will not be stored. Please drink responsibly.
+      </p>
     </div>
-    <div class="ageVerification">
-      <input type="date" id="Birthday" />
-      <input type="button" value="Enter" id="btn" />
-      <div class="Disclaimer">
-        <p>
-          You must be of legal drinking age to enter this site. Your information
-          will not be stored. Please drink responsibly.
-        </p>
+    <div class="container">
+    <div class="AV">
+        <button type="button" onclick="window.location.replace('beers.html')" class="button">
+          <span>Yes</span>
+        </button>
+
+        <button class="button" id="deny">
+          <span>No</span>
+        </button>
       </div>
     </div>
+      
+  
   </body>
+  <script src="script.js"></script>
 </html>
