@@ -2,17 +2,15 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: black
-  ;
+  background-color: black;
 }
 
 /* Main Styles*/
 /*********** header styles***********/
 
-
 li,
 a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 16px;
   font-weight: 500;
   color: whitesmoke;
@@ -30,11 +28,11 @@ header {
 .logo {
   cursor: pointer;
   height: auto;
-  width:100px;
+  width: 100px;
 }
 
 .navbar {
-  padding: 30px 60px ;
+  padding: 30px 60px;
   display: flex;
   background-color: black;
   color: white;
@@ -70,9 +68,6 @@ header {
   margin-bottom: 4px;
 }
 
-
-
-
 /*** Main Content styles ***/
 .container {
   display: flex;
@@ -81,8 +76,6 @@ header {
   margin-top: 100px;
   margin-left: 150px;
   gap: 20%;
-
-
 }
 
 img {
@@ -93,14 +86,13 @@ img {
 .text {
   font-size: 30px;
   color: white;
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Black Han Sans", sans-serif;
 }
 
 h1 {
   font-size: 70px;
   padding-bottom: 40px;
 }
-
 
 /*** Footer Styles ***/
 footer {
@@ -141,7 +133,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .socials li {
@@ -164,22 +155,19 @@ footer {
   text-align: center;
 }
 
-
-
 /* Mobile Styles*/
 
-@media (max-width:480px) {
-
+@media (max-width: 480px) {
   .navbar {
     flex-direction: column;
-    padding:20px;
+    padding: 20px;
     width: 100%;
     margin-bottom: 40px;
   }
 
-  .logo{
-    height:auto;
-    max-width:100px;
+  .logo {
+    height: auto;
+    max-width: 100px;
     margin: 0;
   }
   .nav_links {
@@ -210,7 +198,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:0px;
+    margin: 0px;
   }
 
   #beer_desc {
@@ -219,13 +207,13 @@ footer {
     margin-top: 20px;
     color: white;
     font-size: 25px;
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: "Black Han Sans", sans-serif;
   }
 
   .beer_title {
     font-size: 40px;
     padding-bottom: 30px;
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: "Black Han Sans", sans-serif;
   }
 
   #BC {

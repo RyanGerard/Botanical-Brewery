@@ -8,7 +8,7 @@ const toggleButton = document.getElementById('toggle-Button');
   }) 
 
   const enter = document.getElementById('enter');
-  enter.addEventListener('click', () => {
+  enter.addEventListener('onclick', () => {
     window.location.href = "Beers.html";
   })
 
