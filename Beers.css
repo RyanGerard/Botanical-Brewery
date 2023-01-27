@@ -39,7 +39,7 @@ header {
 }
 
 .navbar {
-  padding: 30px 60px;
+  padding: 30px 30px;
   display: flex;
   background-color: black;
   color: white;
@@ -49,6 +49,7 @@ header {
 
 .nav_links {
   list-style: none;
+  display: flex;
 }
 
 .nav_links li {
@@ -85,7 +86,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:200px;
+  margin-top:100px;
 }
 
 .about p {
@@ -116,10 +117,11 @@ body {
 .container {
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
+  
 }
 .beer_list {
-  margin-top: 350px;
+  margin-top: 200px;
 }
 
 .beer_list h1 {
@@ -138,22 +140,22 @@ body {
 }
 
 .main-content {
-
   display: flex;
   background-image: url(../img/memphis-mini-dark.webp);
+  height: 300px;
+  align-items: center;
 }
 
 img {
   width: 100%;
 }
 
-div {
+.image {
   flex: 1;
 }
 /*** Footer Styles ***/
 
 footer {
- 
   bottom: 0;
   left: 0;
   right: 0;
@@ -206,7 +208,7 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   header{
     padding:0;
   }
@@ -215,15 +217,10 @@ footer {
     flex-direction: column;
     padding: 20px;    
   }
-  .logo {
-    height: auto;
-    
-    margin: 0;
-  }
+  
 
   .nav_links {
     display: none;
-    list-style: none;
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -253,10 +250,12 @@ footer {
 
   .main-content {
     flex-direction: column;
+    height: auto;
   }
 
 .about{
   padding: 20px;
+  margin-top: 200px;
  
 }
 .about p{
@@ -281,7 +280,9 @@ footer {
   border-bottom-width: 4px;
   border-right-width: 4px;
 }
-
+  .beer_list{
+    margin-top:300px;
+  }
 
  .beer_list p {
     font-size: 20px;
@@ -302,10 +303,33 @@ footer {
   }
 }
 
-@media (min-width:481px) and (max-width:768px){
+@media (min-width:561px)and (max-width:860px){
 
- 
-
-
-
+ .main-content{
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  height:400px;
+  overflow: auto;
+ }
+.image{
+  width:25%;
+  flex-wrap: wrap;
+  
+}
+.about{
+  margin-bottom: 200px;
+}
+.about p{
+  padding:80px;
+}
+.beer_desc{
+  padding:20px;
+}
+.nav_links{
+  display: flex;
+}
+.beer_list{
+  margin-top:350px;
+}
 }
