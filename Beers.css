@@ -12,16 +12,15 @@ html {
 li,
 a,
 button {
-  font-family: "Montserrat";
+  font-family: "Black Han Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: whitesmoke;
   text-decoration: none;
-  
 }
 
-.link{
- max-width:10px;
+.link {
+  max-width: 10px;
 }
 
 header {
@@ -86,11 +85,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:100px;
+  margin-top: 100px;
 }
 
 .about p {
-  padding:150px;
+  padding: 150px;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -118,14 +117,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
+
 .beer_list {
   margin-top: 200px;
 }
 
 .beer_list h1 {
-  padding-top:40px;
+  padding-top: 40px;
   font-family: "Black Han Sans", sans-serif;
   text-align: center;
   color: white;
@@ -153,6 +152,9 @@ img {
 .image {
   flex: 1;
 }
+
+
+
 /*** Footer Styles ***/
 
 footer {
@@ -208,16 +210,17 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 560px) {
-  header{
-    padding:0;
+/**** Mobile Styles ****/
+
+@media (max-width: 480px) {
+  header {
+    padding: 0;
   }
-  
+
   .navbar {
     flex-direction: column;
-    padding: 20px;    
+    padding: 20px;
   }
-  
 
   .nav_links {
     display: none;
@@ -253,38 +256,36 @@ footer {
     height: auto;
   }
 
-.about{
-  padding: 20px;
-  margin-top: 200px;
- 
-}
-.about p{
-  padding:5px;
-  font-size: 20px;
-}
-
-
-.arrow {
-  margin-top:10px;
-  box-sizing: border-box;
-  height: 3vw;
-  width: 3vw;
-  border-style: solid;
-  border-color: white;
-  border-width: 0px 1px 1px 0px;
-  transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
-}
-
-.arrow:hover {
-  border-bottom-width: 4px;
-  border-right-width: 4px;
-}
-  .beer_list{
-    margin-top:300px;
+  .about {
+    padding: 20px;
+    margin-top: 200px;
+  }
+  .about p {
+    padding: 5px;
+    font-size: 20px;
   }
 
- .beer_list p {
+  .arrow {
+    margin-top: 10px;
+    box-sizing: border-box;
+    height: 3vw;
+    width: 3vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+  }
+
+  .arrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+  }
+  .beer_list {
+    margin-top: 300px;
+  }
+
+  .beer_list p {
     font-size: 20px;
   }
   #ourBeer {
@@ -303,33 +304,36 @@ footer {
   }
 }
 
-@media (min-width:561px)and (max-width:860px){
 
- .main-content{
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 100px;
-  height:400px;
-  overflow: auto;
- }
-.image{
-  width:25%;
-  flex-wrap: wrap;
-  
-}
-.about{
-  margin-bottom: 200px;
-}
-.about p{
-  padding:80px;
-}
-.beer_desc{
-  padding:20px;
-}
-.nav_links{
-  display: flex;
-}
-.beer_list{
-  margin-top:350px;
-}
+
+
+/**** Tablet Styles ****/
+
+@media (min-width: 561px) and (max-width: 860px) {
+  .main-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    height: 400px;
+    overflow: auto;
+  }
+  .image {
+    width: 25%;
+    flex-wrap: wrap;
+  }
+  .about {
+    margin-bottom: 200px;
+  }
+  .about p {
+    padding: 80px;
+  }
+  .beer_desc {
+    padding: 20px;
+  }
+  .nav_links {
+    display: flex;
+  }
+  .beer_list {
+    margin-top: 350px;
+  }
 }
