@@ -80,12 +80,16 @@ header {
   justify-content: center;
   margin-top: 100px;
   margin-left: 150px;
-  gap: 20%;
+  gap: 40%;
 }
 
-img {
-  max-height: 100%;
+.Beer-image img {
+  max-height: auto;
   max-width: 100%;
+}
+
+.beer_title {
+  font-size: 80px;
 }
 
 .text {
@@ -95,7 +99,7 @@ img {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 50px;
   padding-bottom: 40px;
 }
 
@@ -235,8 +239,8 @@ footer {
 
 @media (min-width: 481px) and (max-width: 860px) {
   .container {
-    margin-left:0px;
-    padding:30px;
+    margin-left: 0px;
+    padding: 30px;
     flex: 1;
     gap: 0;
   }
@@ -248,15 +252,15 @@ footer {
     font-family: "Black Han Sans", sans-serif;
     color: red;
   }
-  
+
   .footer-content {
     margin: 0;
   }
 
-.text{
-  font-size: 20px;
-}
-.image{
-  width: 50%;
-}
+  .text {
+    font-size: 20px;
+  }
+  .image {
+    width: 50%;
+  }
 }
