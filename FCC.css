@@ -5,16 +5,118 @@
   background-color: black;
 }
 
-/* Main Styles*/
-/*********** header styles***********/
+/* Mobile Styles*/
+
+header {
+  padding: 0;
+}
 
 li,
 a {
-   font-family: "Black Han Sans", sans-serif;
+  font-family: "Black Han Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: whitesmoke;
   text-decoration: none;
+}
+
+.navbar {
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.link {
+  max-width: 100px;
+}
+
+.logo {
+  height: auto;
+  margin: 0;
+  max-width: 100px;
+}
+.nav_links {
+  display: none;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.nav_links li {
+  display: block;
+  padding:10px;
+}
+
+.menu {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  
+}
+
+.menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+.active {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+}
+
+#beer_desc {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  padding:10px;
+  font-size: 20px;
+  font-family: "Black Han Sans", sans-serif;
+  margin-bottom: 50px;
+}
+
+.beer_title {
+  font-size: 30px;
+  font-family: "Black Han Sans", sans-serif;
+  margin-bottom:10px;
+}
+
+.Beer-image img{
+  max-width:350px;
+  height: auto;
+}
+
+
+/**** TABLET STYLES****/
+
+@media (min-width: 768px) {
+
+.container{
+  margin-top:200px;
+  margin-left: 50px;
+  flex-direction: row;
+}
+
+.beer_title{
+  font-size: 60px;
+}
+
+.text p{
+  font-size: 25px;
+  padding: 20px;
+}
+
+.menu{
+  display: none;
 }
 
 header {
@@ -24,16 +126,9 @@ header {
   padding: 20px;
   background-color: black;
 }
-.link{
-  max-width: 100px;
-}
-.logo {
-  cursor: pointer;
-  height: auto;
-  width: 100px;
-}
 
 .navbar {
+  flex-direction: row;
   padding: 30px 60px;
   display: flex;
   background-color: black;
@@ -43,11 +138,13 @@ header {
 }
 
 .nav_links {
+  display: flex;
   list-style: none;
+  justify-content: flex-end;
 }
 
 .nav_links li {
-  display: inline-block;
+  justify-content: flex-end;
   padding: 10px 20px;
 }
 
@@ -63,162 +160,108 @@ header {
   display: none;
 }
 
-.menu-line {
-  width: 20px;
-  height: 3px;
-  background-color: white;
-  margin-bottom: 4px;
+
 }
 
-/*** Main Content styles ***/
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 80px;
-  margin-left: 150px;
-  gap: 30%;
-}
 
-.Beer-image img {
-  max-height: auto;
-  max-width: 100%;
-}
 
-.beer_title {
-  font-size: 80px;
-  padding-bottom: 40px;
-}
 
-.text {
-  font-size: 30px;
-  color: white;
-  font-family: "Black Han Sans", sans-serif;
-}
 
-/*** Footer Styles ***/
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 25px;
-  width: 100vw;
-  padding-top: 40px;
-  color: white;
-}
 
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
 
-.footer-content h3 {
-  font-size: 15px;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 3rem;
-}
 
-.footer-content p {
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 14px;
-}
+/**** DESKTOP STYLES****/
 
-.socials {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@media (min-width: 1440px) {
+  li,
+  a {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: whitesmoke;
+    text-decoration: none;
+  }
 
-.socials li {
-  margin: 0 10px;
-}
 
-.socials a {
-  text-decoration: none;
-  color: white;
-}
-
-.socials a i {
-  font-size: 1.1rem;
-}
-
-.footer-bottom {
-  background-color: black;
-  width: 100vw;
-  padding: 20px 0;
-  text-align: center;
-}
-
-/* Mobile Styles*/
-
-@media (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    width: 100%;
-    margin-bottom: 40px;
+    background-color: black;
   }
 
   .logo {
+    cursor: pointer;
     height: auto;
-    max-width: 100px;
-    margin: 0;
+    width: 100px;
   }
-  .nav_links {
-    display: none;
-    list-style: none;
+
+  .navbar {
+    padding: 30px 30px;
+    display: flex;
+    background-color: black;
+    color: white;
     width: 100%;
-    text-align: center;
-    padding-top: 10px;
+    justify-content: space-between;
+  }
+
+  .nav_links {
+    display: flex;
+    list-style: none;
   }
 
   .nav_links li {
-    display: block;
-    border-top: 1px solid white;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+
+  .nav_links li a {
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav_links li a:hover {
+    color: lightskyblue;
   }
 
   .menu {
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 40px;
+    display: none;
   }
 
-  .active {
-    display: block;
+  .menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
   }
 
-  #container {
+  /*** Main Content styles ***/
+  .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin: 0px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 150px;
+    gap: 40%;
   }
 
-  #beer_desc {
-    all: inherit;
-    text-align: center;
-    margin-top: 20px;
-    color: white;
-    font-size: 25px;
-    font-family: "Black Han Sans", sans-serif;
+  .Beer-image img {
+    max-height: auto;
+    max-width: 100%;
   }
 
   .beer_title {
-    font-size: 40px;
-    padding-bottom: 30px;
+    font-size: 80px;
+  }
+
+  .text {
+    font-size: 30px;
+    color: white;
     font-family: "Black Han Sans", sans-serif;
   }
 
-  #BC {
-    margin-top: 40px;
+  h1 {
+    font-size: 50px;
+    padding-bottom: 40px;
   }
 }
