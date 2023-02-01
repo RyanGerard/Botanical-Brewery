@@ -87,7 +87,7 @@ header {
   width: 200px;
 }
 
-.about {
+.about-text {
   display: flex;
   padding: 10px;
   margin-top: 200px;
@@ -197,9 +197,9 @@ header {
 
 
 @media (min-width: 1440px) {
-  /*********** main content styles ***********/
+ 
 
-  .about {
+  .about-text {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -227,5 +227,9 @@ header {
 
   .Beer-image {
     padding: 0px;
+  }
+  .Beer-image:hover {
+    margin-top:-100px;
+    transition: margin 0.4s ease-in-out;
   }
 }

@@ -25,6 +25,10 @@ header {
   background-color: black;
 }
 
+.link{
+  max-width: 100px;
+}
+
 .logo {
   cursor: pointer;
   height: auto;

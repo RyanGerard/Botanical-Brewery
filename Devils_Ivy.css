@@ -19,7 +19,7 @@ a {
 }
 
 .link {
-  max-width: 10px;
+  max-width: 100px;
 }
 
 header {
@@ -179,7 +179,7 @@ footer {
     width: 100%;
     margin-bottom: 40px;
   }
-
+ 
   .logo {
     height: auto;
     margin: 0;

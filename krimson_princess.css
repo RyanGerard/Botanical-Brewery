@@ -23,6 +23,9 @@ a {
   color: whitesmoke;
   text-decoration: none;
 }
+.link{
+  max-width: 100px;
+}
 
 .logo {
   cursor: pointer;
