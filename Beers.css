@@ -4,70 +4,59 @@
   margin: 0;
   font-family: "Black Han Sans", sans-serif;
 }
+
+/**** MOBILE STYLE****/
+body {
+  background-image: url(../img/memphis-mini-dark.webp);
+}
+
 html {
   scroll-behavior: smooth;
 }
-/*********** header styles***********/
-
 li,
-a,
-button {
+a {
   font-family: "Black Han Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: whitesmoke;
   text-decoration: none;
 }
-
-.link {
-  max-width: 10px;
-}
-
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: black;
-}
-
-.logo {
-  cursor: pointer;
-  height: auto;
-  width: 100px;
+  padding: 0;
 }
 
 .navbar {
-  padding: 30px 30px;
-  display: flex;
-  background-color: black;
-  color: white;
-  width: 100%;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .nav_links {
-  list-style: none;
-  display: flex;
+  display: none;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
 }
 
 .nav_links li {
-  display: inline-block;
-  padding: 10px 20px;
+  display: block;
 }
 
-.nav_links li a {
-  transition: all 0.3s ease 0s;
+.link {
+  max-width: 100px;
 }
-
-.nav_links li a:hover {
-  color: lightskyblue;
+.logo {
+  margin: 0;
+  height: auto;
+  max-width: 100px;
 }
 
 .menu {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
-
 .menu-line {
   width: 20px;
   height: 3px;
@@ -75,32 +64,43 @@ header {
   margin-bottom: 4px;
 }
 
-/*********** main content styles ***********/
-body {
-  background-image: url(../img/memphis-mini-dark.webp);
+.active {
+  display: block;
 }
 
-.about{
-  text-align: center;
+.container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  justify-content: center;
 }
 
-.about p {
-  padding: 150px;
-  justify-content: center;
+.main-content {
   display: flex;
   align-items: center;
-  font-size: 25px;
+  flex-direction: column;
+  height: auto;
+  margin-top: 50px;
+  width: 100%;
+}
+.Beer-image img {
+  height: 200px;
+  width: 200px;
+}
+
+.about {
+  display: flex;
+  padding: 10px;
+  margin-top: 200px;
+  font-size: 20px;
   color: white;
+  text-align: center;
 }
 
 .arrow {
+  margin-top: 10px;
   box-sizing: border-box;
-  height: 2vw;
-  width: 2vw;
+  height: 3vw;
+  width: 3vw;
   border-style: solid;
   border-color: white;
   border-width: 0px 1px 1px 0px;
@@ -112,15 +112,8 @@ body {
   border-bottom-width: 4px;
   border-right-width: 4px;
 }
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .beer_list {
-  margin-top: 200px;
+  margin-top: 300px;
 }
 
 .beer_list h1 {
@@ -130,210 +123,109 @@ body {
   color: white;
   font-size: 40px;
 }
-.beer_list p {
-  font-family: "Black Han Sans", sans-serif;
-  padding-top: 20px;
-  text-align: center;
+.beer_desc {
   color: white;
-  font-size: 20px;
-}
-
-.main-content {
-  display: flex;
-  background-image: url(../img/memphis-mini-dark.webp);
-  height: 300px;
-  align-items: center;
-}
-
-img {
-  width: 100%;
-}
-
-.image {
-  flex: 1;
-}
-
-
-
-/*** Footer Styles ***/
-
-footer {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 25px;
-  width: 100vw;
-  padding-top: 40px;
-  color: white;
-}
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   text-align: center;
-  margin-top: 300px;
-  background-color: black;
+  padding: 20px;
 }
-.footer-content h3 {
-  font-size: 15px;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 3rem;
-}
-.footer-content p {
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 14px;
-}
-.socials {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.socials li {
-  margin: 0 10px;
-}
-.socials a {
-  text-decoration: none;
-  color: white;
-}
-.socials a i {
-  font-size: 1.1rem;
-}
-.footer-bottom {
-  background-color: black;
-  width: 100vw;
-  padding: 20px 0;
-  text-align: center;
-}
-
-/**** Mobile Styles ****/
-
-@media (max-width: 480px) {
-  header {
-    padding: 0;
-  }
-
-  .navbar {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .nav_links {
-    display: none;
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-  }
-
-  .nav_links li {
-    display: block;
-    border-top: 1px solid white;
-  }
-
-  .logo {
-    margin: 0;
-    height: auto;
-    max-width: 100px;
-  }
-
-  .menu {
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-
-  .active {
-    display: block;
-  }
-
-  .main-content {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .about {
-    padding: 20px;
-    margin-top: 200px;
-  }
-  .about p {
-    padding: 5px;
-    font-size: 20px;
-  }
-
-  .arrow {
-    margin-top: 10px;
-    box-sizing: border-box;
-    height: 3vw;
-    width: 3vw;
-    border-style: solid;
-    border-color: white;
-    border-width: 0px 1px 1px 0px;
-    transform: rotate(45deg);
-    transition: border-width 150ms ease-in-out;
-  }
-
-  .arrow:hover {
-    border-bottom-width: 4px;
-    border-right-width: 4px;
-  }
-  .beer_list {
-    margin-top: 300px;
-  }
-
-  .beer_list p {
-    font-size: 20px;
-  }
-  #ourBeer {
-    font-family: "Black Han Sans", sans-serif;
-    padding-top: 40px;
-    margin: 0 auto;
-    font-size: 10px;
-    color: white;
-  }
-
-  footer {
-    position: relative;
-  }
-  .footer-content {
-    margin: 0;
-  }
-}
-
-
-
 
 /**** Tablet Styles ****/
 
-@media (min-width: 561px) and (max-width: 860px) {
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+  }
+
+  .navbar {
+    flex-direction: row;
+    padding: 30px 60px;
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav_links {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+  }
+
+  .nav_links li {
+    justify-content: flex-end;
+    padding: 10px 20px;
+  }
+
+  .nav_links li a {
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav_links li a:hover {
+    color: lightskyblue;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .arrow {
+    margin-top: 70px;
+  }
   .main-content {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 100px;
-    height: 400px;
-    overflow: auto;
+    margin-top: 50px;
   }
-  .image {
-    width: 25%;
-    flex-wrap: wrap;
+
+  .Beer-image {
+    width: 33.33%;
+    padding: 30px;
   }
-  .about {
-    margin-bottom: 200px;
-  }
-  .about p {
-    padding: 80px;
-  }
+
   .beer_desc {
     padding: 20px;
   }
-  .nav_links {
-    display: flex;
+}
+
+/**** DESKTOP STYLES****/
+
+
+@media (min-width: 1440px) {
+  /*********** main content styles ***********/
+
+  .about {
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 150px;
+    font-size: 25px;
   }
+
+  .arrow {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    height: 2vw;
+    width: 2vw;
+  }
+
   .beer_list {
-    margin-top: 350px;
+    margin-top: 100px;
+  }
+
+  .main-content {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+
+  .Beer-image {
+    padding: 0px;
   }
 }
