@@ -242,11 +242,11 @@ header {
     justify-content: center;
     margin-top: 100px;
     margin-left: 150px;
-    gap: 40%;
+    gap: 20%;
   }
 
   .Beer-image img {
-    max-height: auto;
+    max-height: 500px;
     max-width: 100%;
   }
 

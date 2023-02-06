@@ -7,9 +7,12 @@ const toggleButton = document.getElementById('toggle-Button');
     navList.classList.toggle('active');
   }) 
 
+  /*
   const enter = document.getElementById('enter');
   enter.addEventListener('onclick', () => {
     window.location.href = "Beers.html";
   })
+ 
+  */
 
   
