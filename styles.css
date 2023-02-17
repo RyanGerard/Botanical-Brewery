@@ -7,36 +7,46 @@
 }
 
 body {
-  overflow: hidden;
+  overflow:hidden;
   background-image: url(../img/memphis-mini-dark.webp);
+}
+.logo{
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
 }
 .container{
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 .AV{
-  gap:10%;
-  width: 100%;
-  margin: auto;
+  gap:20%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25vh;
+  height: 300px;
+  
 }
 
 .button{
-  font-family: "Black Han Sans", sans-serif;
+  font-family: sans-serif;
 color: white;
   font-size: 20px;
-  width: 100px;
-  padding: 30px;
-  border-radius: 50px;
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
   background-color: black;
+  margin-top:-100px;
 }
 
 .disclaimer{
-  margin-top:200px;
+  margin-top:100px;
   text-align: center;
   font-size: 30px;
   color: white;
@@ -47,4 +57,30 @@ color: white;
 .legal{
   padding: 10px;
   font-size: 12px;
+  color:white;
+  text-align: center;
+  margin-top:-100px;
+
+}
+
+@media (min-width: 1440px){
+
+  .AV{
+    gap:10%;
+  }
+
+.button{
+  width: 30%;
+}
+ .logo{
+  
+    display: block;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+  }
+ 
+
 }
